@@ -1,7 +1,1 @@
-.env
-yedekler/
-nextjs/.next/
-nextjs/node_modules/
-nextjs/drizzle/
-.DS_Store
-Thumbs.db
+data/
