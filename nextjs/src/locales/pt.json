@@ -5,34 +5,38 @@
     "village": "Aldeia",
     "gallery": "Galeria",
     "allNews": "Todas as Notícias",
-    "advertise": "Anúncio",
+    "advertise": "Anúncios",
     "editorPanel": "Painel de Edição",
     "logout": "Sair",
     "login": "Entrar",
+    "sendNews": "Enviar Notícia",
+    "searchPlaceholder": "Pesquisar Notícia",
     "langLabel": "Idioma"
   },
   "footer": {
     "pages": "Páginas",
     "categories": "Categorias",
     "contact": "Contato",
-    "agenda": "Agenda",
+    "agenda": "Principais Notícias",
     "sports": "Esportes",
     "economy": "Economia",
+    "newsletter": "Boletim",
+    "newsletterDesc": "Assine nosso boletim de notícias e não perca as atualizações.",
     "rights": "Todos os direitos reservados."
   },
   "common": {
     "readMore": "Continuar Lendo",
     "loading": "Carregando...",
-    "noResults": "Resultado não encontrado",
+    "noResults": "Nenhum resultado encontrado",
     "back": "Voltar",
-    "search": "Procurar",
+    "search": "Pesquisar",
     "share": "Compartilhar",
     "email": "E-mail",
     "password": "Senha",
     "send": "Enviar"
   },
   "home": {
-    "title": "Notícias e galeria atualizadas",
+    "title": "Notícias e Galeria Atuais",
     "latestNews": "Últimas Notícias",
     "moreNews": "Mais Notícias"
   },
@@ -46,7 +50,7 @@
     "title": "Aldeia"
   },
   "advertise": {
-    "title": "Anúncio"
+    "title": "Anúncios"
   },
   "login": {
     "title": "Entrar",

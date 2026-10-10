@@ -2,6 +2,8 @@ import { getPost, getSiteSettings } from "@/lib/ghost"
 import Image from "next/image"
 import Link from "next/link"
 import { AdDisplay } from "@/components/AdDisplay"
+import { getServerLang } from "@/lib/i18n-server"
+import { translatePost } from "@/lib/translate"
 
 export const dynamic = 'force-dynamic'
 export const revalidate = 60
@@ -26,8 +28,10 @@ export async function generateMetadata({ params }: Props) {
 
 export default async function PostPage({ params }: Props) {
   const { slug } = await params
-  const post = await getPost(slug)
+  const rawPost = await getPost(slug)
   const settings = await getSiteSettings()
+  const lang = await getServerLang()
+  const post = rawPost ? await translatePost(rawPost, lang) : rawPost
   const accentColor = settings?.accent_color || "#2563eb"
 
   if (!post) {

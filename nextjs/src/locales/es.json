@@ -6,9 +6,11 @@
     "gallery": "Galería",
     "allNews": "Todas las Noticias",
     "advertise": "Anuncios",
-    "editorPanel": "Panel de Editor",
+    "editorPanel": "Panel de Editores",
     "logout": "Cerrar Sesión",
     "login": "Iniciar Sesión",
+    "sendNews": "Enviar Noticia",
+    "searchPlaceholder": "Buscar Noticias...",
     "langLabel": "Idioma"
   },
   "footer": {
@@ -18,6 +20,8 @@
     "agenda": "Portada",
     "sports": "Deportes",
     "economy": "Economía",
+    "newsletter": "Boletín",
+    "newsletterDesc": "Suscríbete al boletín de noticias para no perderte las actualizaciones.",
     "rights": "Todos los derechos reservados."
   },
   "common": {
@@ -32,7 +36,7 @@
     "send": "Enviar"
   },
   "home": {
-    "title": "Noticias y galería actualizadas",
+    "title": "Noticias y Galería actualizadas",
     "latestNews": "Últimas Noticias",
     "moreNews": "Más Noticias"
   },

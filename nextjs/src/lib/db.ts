@@ -1,6 +1,6 @@
 import { drizzle } from "drizzle-orm/postgres-js"
 import postgres from "postgres"
-import { pgTable, text, timestamp, integer, boolean, index } from "drizzle-orm/pg-core"
+import { pgTable, text, timestamp, integer, boolean, index, uniqueIndex } from "drizzle-orm/pg-core"
 
 // ── Better Auth ────────────────────────────────────────────────
 export const user = pgTable("user", {
@@ -122,6 +122,18 @@ export type NewAd = typeof ads.$inferInsert
 export type AdCampaign = typeof adCampaigns.$inferSelect
 export type NewAdCampaign = typeof adCampaigns.$inferInsert
 
+// ── İçerik çevirileri (haber yazıları) — post_id + lang bazında cache ──
+export const postTranslations = pgTable("post_translations", {
+  postId:          text("post_id").notNull(),
+  lang:            text("lang").notNull(),
+  title:           text("title"),
+  excerpt:         text("excerpt"),
+  html:            text("html"),
+  sourceUpdatedAt: timestamp("source_updated_at"),
+  updatedAt:       timestamp("updated_at").defaultNow().notNull(),
+}, (t) => [uniqueIndex("post_translations_post_lang_idx").on(t.postId, t.lang)])
+export type PostTranslation = typeof postTranslations.$inferSelect
+
 const buildDatabaseUrl = () => {
   const host = process.env.POSTGRES_HOST
   const user = process.env.POSTGRES_USER
@@ -138,5 +150,5 @@ const buildDatabaseUrl = () => {
 
 const client = postgres(buildDatabaseUrl())
 export const db = drizzle(client, {
-  schema: { user, session, account, verification, albums, photos, ads, adCampaigns },
+  schema: { user, session, account, verification, albums, photos, ads, adCampaigns, postTranslations },
 })

@@ -4,26 +4,30 @@
     "news": "Actualités",
     "village": "Village",
     "gallery": "Galerie",
-    "allNews": "Toutes les actualités",
+    "allNews": "Toutes les Actualités",
     "advertise": "Publicité",
     "editorPanel": "Tableau de bord de l'éditeur",
     "logout": "Se déconnecter",
     "login": "Se connecter",
+    "sendNews": "Envoyer une actualité",
+    "searchPlaceholder": "Rechercher une actualité...",
     "langLabel": "Langue"
   },
   "footer": {
     "pages": "Pages",
     "categories": "Catégories",
     "contact": "Contact",
-    "agenda": "Actualités principales",
+    "agenda": "Actualités en vedette",
     "sports": "Sport",
     "economy": "Économie",
+    "newsletter": "Bulletin",
+    "newsletterDesc": "Abonnez-vous au bulletin d'actualités et ne manquez aucune mise à jour.",
     "rights": "Tous droits réservés."
   },
   "common": {
     "readMore": "Lire la suite",
-    "loading": "Chargement…",
-    "noResults": "Aucun résultat trouvé",
+    "loading": "Chargement...",
+    "noResults": "Aucun résultat",
     "back": "Retour",
     "search": "Rechercher",
     "share": "Partager",
@@ -33,8 +37,8 @@
   },
   "home": {
     "title": "Actualités et galerie en direct",
-    "latestNews": "Dernières actualités",
-    "moreNews": "Plus d'actualités"
+    "latestNews": "Dernières Actualités",
+    "moreNews": "Plus d'Actualités"
   },
   "about": {
     "title": "À propos de nous"

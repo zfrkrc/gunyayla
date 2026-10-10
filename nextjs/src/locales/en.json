@@ -9,6 +9,8 @@
     "editorPanel": "Editor Panel",
     "logout": "Log Out",
     "login": "Log In",
+    "sendNews": "Send News",
+    "searchPlaceholder": "Search News...",
     "langLabel": "Language"
   },
   "footer": {
@@ -18,6 +20,8 @@
     "agenda": "Agenda",
     "sports": "Sports",
     "economy": "Economy",
+    "newsletter": "Bulletin",
+    "newsletterDesc": "Subscribe to the news bulletin, don't miss updates.",
     "rights": "All rights reserved."
   },
   "common": {

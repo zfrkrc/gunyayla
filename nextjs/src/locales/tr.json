@@ -9,6 +9,8 @@
     "editorPanel": "Editör Paneli",
     "logout": "Çıkış Yap",
     "login": "Giriş Yap",
+    "sendNews": "Haber Gönder",
+    "searchPlaceholder": "Haber ara…",
     "langLabel": "Dil"
   },
   "footer": {
@@ -18,6 +20,8 @@
     "agenda": "Gündem",
     "sports": "Spor",
     "economy": "Ekonomi",
+    "newsletter": "Bülten",
+    "newsletterDesc": "Haber bültenine abone ol, güncellemeleri kaçırma.",
     "rights": "Tüm hakları saklıdır."
   },
   "common": {

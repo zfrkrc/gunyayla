@@ -3,6 +3,8 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 import Link from "next/link"
 import { AdDisplay } from "@/components/AdDisplay"
+import { getServerLang } from "@/lib/i18n-server"
+import { translatePost } from "@/lib/translate"
 
 export const dynamic = 'force-dynamic'
 
@@ -19,7 +21,9 @@ export default async function DynamicPage({ params }: Props) {
   const pageSlug = slug.join("/")
 
   // Try news post first (preserves hash fragments for Ghost feedback/comment links)
-  const post = await getPost(pageSlug)
+  const rawPost = await getPost(pageSlug)
+  const lang = await getServerLang()
+  const post = rawPost ? await translatePost(rawPost, lang) : rawPost
   if (post) {
     const settings = await getSiteSettings()
     const accentColor = settings?.accent_color || "#2563eb"

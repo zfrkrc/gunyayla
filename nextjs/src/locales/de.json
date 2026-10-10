@@ -6,9 +6,11 @@
     "gallery": "Galerie",
     "allNews": "Alle Nachrichten",
     "advertise": "Werbung",
-    "editorPanel": "Redakteur-Panels",
+    "editorPanel": "Redakteurs-Panel",
     "logout": "Abmelden",
     "login": "Anmelden",
+    "sendNews": "Nachricht senden",
+    "searchPlaceholder": "Nachrichten suchen…",
     "langLabel": "Sprache"
   },
   "footer": {
@@ -18,12 +20,14 @@
     "agenda": "Aktuelles",
     "sports": "Sport",
     "economy": "Wirtschaft",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Abonnieren Sie unseren Nachrichten-Newsletter und verpassen Sie keine Aktualisierungen.",
     "rights": "Alle Rechte vorbehalten."
   },
   "common": {
     "readMore": "Weiterlesen",
-    "loading": "Laden...",
-    "noResults": "Keine Ergebnisse gefunden",
+    "loading": "Laden…",
+    "noResults": "Keine Ergebnisse",
     "back": "Zurück",
     "search": "Suchen",
     "share": "Teilen",
@@ -46,7 +50,7 @@
     "title": "Dorf"
   },
   "advertise": {
-    "title": "Werbe"
+    "title": "Werbung"
   },
   "login": {
     "title": "Anmelden",
