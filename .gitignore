@@ -1,1 +1,6 @@
 data/
+
+# Sırlar — commit edilmez
+.env
+.env.*
+!.env.example
