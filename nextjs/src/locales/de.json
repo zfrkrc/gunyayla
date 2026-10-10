@@ -1,0 +1,60 @@
+{
+  "code": "de",
+  "nav": {
+    "news": "Nachrichten",
+    "village": "Dorf",
+    "gallery": "Galerie",
+    "allNews": "Alle Nachrichten",
+    "advertise": "Werbung",
+    "editorPanel": "Redakteur-Panels",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "langLabel": "Sprache"
+  },
+  "footer": {
+    "pages": "Seiten",
+    "categories": "Kategorien",
+    "contact": "Kontakt",
+    "agenda": "Aktuelles",
+    "sports": "Sport",
+    "economy": "Wirtschaft",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "common": {
+    "readMore": "Weiterlesen",
+    "loading": "Laden...",
+    "noResults": "Keine Ergebnisse gefunden",
+    "back": "Zurück",
+    "search": "Suchen",
+    "share": "Teilen",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "send": "Senden"
+  },
+  "home": {
+    "title": "Aktuelle Nachrichten und Galerie",
+    "latestNews": "Letzte Nachrichten",
+    "moreNews": "Mehr Nachrichten"
+  },
+  "about": {
+    "title": "Über uns"
+  },
+  "gallery": {
+    "title": "Galerie"
+  },
+  "village": {
+    "title": "Dorf"
+  },
+  "advertise": {
+    "title": "Werbe"
+  },
+  "login": {
+    "title": "Anmelden",
+    "emailLabel": "E-Mail",
+    "passwordLabel": "Passwort",
+    "submit": "Anmelden"
+  },
+  "privacy": {
+    "title": "Datenschutz"
+  }
+}

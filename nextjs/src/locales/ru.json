@@ -1,0 +1,60 @@
+{
+  "code": "ru",
+  "nav": {
+    "news": "Новости",
+    "village": "Село",
+    "gallery": "Галерея",
+    "allNews": "Все новости",
+    "advertise": "Реклама",
+    "editorPanel": "Панель редактора",
+    "logout": "Выйти",
+    "login": "Войти",
+    "langLabel": "Язык"
+  },
+  "footer": {
+    "pages": "Страницы",
+    "categories": "Категории",
+    "contact": "Контакты",
+    "agenda": "Актуальное",
+    "sports": "Спорт",
+    "economy": "Экономика",
+    "rights": "Все права защищены."
+  },
+  "common": {
+    "readMore": "Продолжить чтение",
+    "loading": "Загрузка…",
+    "noResults": "Результаты не найдены",
+    "back": "Назад",
+    "search": "Искать",
+    "share": "Поделиться",
+    "email": "Электронная почта",
+    "password": "Пароль",
+    "send": "Отправить"
+  },
+  "home": {
+    "title": "Последние новости и галерея",
+    "latestNews": "Последние новости",
+    "moreNews": "Еще новости"
+  },
+  "about": {
+    "title": "О нас"
+  },
+  "gallery": {
+    "title": "Галерея"
+  },
+  "village": {
+    "title": "Село"
+  },
+  "advertise": {
+    "title": "Реклама"
+  },
+  "login": {
+    "title": "Войти",
+    "emailLabel": "Электронная почта",
+    "passwordLabel": "Пароль",
+    "submit": "Войти"
+  },
+  "privacy": {
+    "title": "Политика конфиденциальности"
+  }
+}

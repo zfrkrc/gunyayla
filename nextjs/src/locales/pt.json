@@ -1,0 +1,60 @@
+{
+  "code": "pt",
+  "nav": {
+    "news": "Notícias",
+    "village": "Aldeia",
+    "gallery": "Galeria",
+    "allNews": "Todas as Notícias",
+    "advertise": "Anúncio",
+    "editorPanel": "Painel de Edição",
+    "logout": "Sair",
+    "login": "Entrar",
+    "langLabel": "Idioma"
+  },
+  "footer": {
+    "pages": "Páginas",
+    "categories": "Categorias",
+    "contact": "Contato",
+    "agenda": "Agenda",
+    "sports": "Esportes",
+    "economy": "Economia",
+    "rights": "Todos os direitos reservados."
+  },
+  "common": {
+    "readMore": "Continuar Lendo",
+    "loading": "Carregando...",
+    "noResults": "Resultado não encontrado",
+    "back": "Voltar",
+    "search": "Procurar",
+    "share": "Compartilhar",
+    "email": "E-mail",
+    "password": "Senha",
+    "send": "Enviar"
+  },
+  "home": {
+    "title": "Notícias e galeria atualizadas",
+    "latestNews": "Últimas Notícias",
+    "moreNews": "Mais Notícias"
+  },
+  "about": {
+    "title": "Sobre Nós"
+  },
+  "gallery": {
+    "title": "Galeria"
+  },
+  "village": {
+    "title": "Aldeia"
+  },
+  "advertise": {
+    "title": "Anúncio"
+  },
+  "login": {
+    "title": "Entrar",
+    "emailLabel": "E-mail",
+    "passwordLabel": "Senha",
+    "submit": "Entrar"
+  },
+  "privacy": {
+    "title": "Política de Privacidade"
+  }
+}

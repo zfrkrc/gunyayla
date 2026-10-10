@@ -1,0 +1,60 @@
+{
+  "code": "es",
+  "nav": {
+    "news": "Noticias",
+    "village": "Pueblo",
+    "gallery": "Galería",
+    "allNews": "Todas las Noticias",
+    "advertise": "Anuncios",
+    "editorPanel": "Panel de Editor",
+    "logout": "Cerrar Sesión",
+    "login": "Iniciar Sesión",
+    "langLabel": "Idioma"
+  },
+  "footer": {
+    "pages": "Páginas",
+    "categories": "Categorías",
+    "contact": "Contacto",
+    "agenda": "Portada",
+    "sports": "Deportes",
+    "economy": "Economía",
+    "rights": "Todos los derechos reservados."
+  },
+  "common": {
+    "readMore": "Continuar Leyendo",
+    "loading": "Cargando...",
+    "noResults": "No se encontraron resultados",
+    "back": "Atrás",
+    "search": "Buscar",
+    "share": "Compartir",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "send": "Enviar"
+  },
+  "home": {
+    "title": "Noticias y galería actualizadas",
+    "latestNews": "Últimas Noticias",
+    "moreNews": "Más Noticias"
+  },
+  "about": {
+    "title": "Acerca de Nosotros"
+  },
+  "gallery": {
+    "title": "Galería"
+  },
+  "village": {
+    "title": "Pueblo"
+  },
+  "advertise": {
+    "title": "Anuncios"
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "emailLabel": "Correo electrónico",
+    "passwordLabel": "Contraseña",
+    "submit": "Iniciar Sesión"
+  },
+  "privacy": {
+    "title": "Política de Privacidad"
+  }
+}

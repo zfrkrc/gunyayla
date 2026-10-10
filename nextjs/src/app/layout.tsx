@@ -3,6 +3,8 @@ import Link from "next/link"
 import "./globals.css"
 import { Navbar } from "@/components/ui/Navbar"
 import { getSiteSettings } from "@/lib/ghost"
+import { getServerLang } from "@/lib/i18n-server"
+import { getDictionary } from "@/lib/i18n"
 
 const BASE_URL = "https://gunyayla.com.tr"
 
@@ -56,6 +58,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const logo = settings?.logo || null
   const navigation = settings?.navigation || []
   const secondaryNav = settings?.secondary_navigation || []
+  const lang = await getServerLang()
+  const dict = getDictionary(lang)
 
   const cssVars = {
     "--color-primary": accentColor,
@@ -65,9 +69,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   } as React.CSSProperties
 
   return (
-    <html lang="tr" style={cssVars}>
+    <html lang={lang} style={cssVars}>
       <body className="min-h-screen bg-gray-50 text-gray-900">
-        <Navbar siteTitle={siteTitle} logo={logo} navigation={navigation} />
+        <Navbar siteTitle={siteTitle} logo={logo} navigation={navigation} lang={lang} dict={dict.nav} />
         <main className="max-w-7xl mx-auto px-4 py-6">
           {children}
         </main>
@@ -79,7 +83,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <p className="text-xs text-gray-500 leading-relaxed">{siteDescription}</p>
               </div>
               <div>
-                <h3 className="text-sm font-bold text-gray-800 mb-3">Sayfalar</h3>
+                <h3 className="text-sm font-bold text-gray-800 mb-3">{dict.footer.pages}</h3>
                 <ul className="space-y-1.5">
                   {navigation.length > 0 ? navigation.map((item: any) => (
                     <li key={item.url}>
@@ -87,25 +91,25 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                     </li>
                   )) : (
                     <>
-                      <li><Link href="/" className="text-xs text-gray-500 hover:text-primary transition">Haberler</Link></li>
-                      <li><Link href="/koy" className="text-xs text-gray-500 hover:text-primary transition">Köy</Link></li>
-                      <li><Link href="/galeri" className="text-xs text-gray-500 hover:text-primary transition">Galeri</Link></li>
-                      <li><Link href="/haberler" className="text-xs text-gray-500 hover:text-primary transition">Tüm Haberler</Link></li>
-                      <li><Link href="/reklam" className="text-xs text-gray-500 hover:text-primary transition">Reklam</Link></li>
+                      <li><Link href="/" className="text-xs text-gray-500 hover:text-primary transition">{dict.nav.news}</Link></li>
+                      <li><Link href="/koy" className="text-xs text-gray-500 hover:text-primary transition">{dict.nav.village}</Link></li>
+                      <li><Link href="/galeri" className="text-xs text-gray-500 hover:text-primary transition">{dict.nav.gallery}</Link></li>
+                      <li><Link href="/haberler" className="text-xs text-gray-500 hover:text-primary transition">{dict.nav.allNews}</Link></li>
+                      <li><Link href="/reklam" className="text-xs text-gray-500 hover:text-primary transition">{dict.nav.advertise}</Link></li>
                     </>
                   )}
                 </ul>
               </div>
               <div>
-                <h3 className="text-sm font-bold text-gray-800 mb-3">Kategoriler</h3>
+                <h3 className="text-sm font-bold text-gray-800 mb-3">{dict.footer.categories}</h3>
                 <ul className="space-y-1.5">
-                  <li><Link href="/?tag=gundem" className="text-xs text-gray-500 hover:text-primary transition">Gündem</Link></li>
-                  <li><Link href="/?tag=spor" className="text-xs text-gray-500 hover:text-primary transition">Spor</Link></li>
-                  <li><Link href="/?tag=ekonomi" className="text-xs text-gray-500 hover:text-primary transition">Ekonomi</Link></li>
+                  <li><Link href="/?tag=gundem" className="text-xs text-gray-500 hover:text-primary transition">{dict.footer.agenda}</Link></li>
+                  <li><Link href="/?tag=spor" className="text-xs text-gray-500 hover:text-primary transition">{dict.footer.sports}</Link></li>
+                  <li><Link href="/?tag=ekonomi" className="text-xs text-gray-500 hover:text-primary transition">{dict.footer.economy}</Link></li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-sm font-bold text-gray-800 mb-3">İletişim</h3>
+                <h3 className="text-sm font-bold text-gray-800 mb-3">{dict.footer.contact}</h3>
                 <ul className="space-y-1.5">
                   <li><span className="text-xs text-gray-500">info@gunyayla.com.tr</span></li>
                   <li><a href="tel:+905346636464" className="text-xs text-gray-500 hover:text-primary transition">+90 534 663 64 64</a></li>
@@ -113,7 +117,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               </div>
             </div>
             <div className="border-t border-gray-100 pt-6 text-center text-xs text-gray-400">
-              © {new Date().getFullYear()} {siteTitle} — Tüm hakları saklıdır.
+              © {new Date().getFullYear()} {siteTitle} — {dict.footer.rights}
             </div>
           </div>
         </footer>

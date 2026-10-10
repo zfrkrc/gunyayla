@@ -1,0 +1,60 @@
+{
+  "code": "fr",
+  "nav": {
+    "news": "Actualités",
+    "village": "Village",
+    "gallery": "Galerie",
+    "allNews": "Toutes les actualités",
+    "advertise": "Publicité",
+    "editorPanel": "Tableau de bord de l'éditeur",
+    "logout": "Se déconnecter",
+    "login": "Se connecter",
+    "langLabel": "Langue"
+  },
+  "footer": {
+    "pages": "Pages",
+    "categories": "Catégories",
+    "contact": "Contact",
+    "agenda": "Actualités principales",
+    "sports": "Sport",
+    "economy": "Économie",
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "readMore": "Lire la suite",
+    "loading": "Chargement…",
+    "noResults": "Aucun résultat trouvé",
+    "back": "Retour",
+    "search": "Rechercher",
+    "share": "Partager",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "send": "Envoyer"
+  },
+  "home": {
+    "title": "Actualités et galerie en direct",
+    "latestNews": "Dernières actualités",
+    "moreNews": "Plus d'actualités"
+  },
+  "about": {
+    "title": "À propos de nous"
+  },
+  "gallery": {
+    "title": "Galerie"
+  },
+  "village": {
+    "title": "Village"
+  },
+  "advertise": {
+    "title": "Publicité"
+  },
+  "login": {
+    "title": "Se connecter",
+    "emailLabel": "E-mail",
+    "passwordLabel": "Mot de passe",
+    "submit": "Se connecter"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité"
+  }
+}

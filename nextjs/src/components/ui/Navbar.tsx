@@ -4,15 +4,21 @@ import Link from "next/link"
 import { useSession, signOut } from "@/lib/auth-client"
 import Image from "next/image"
 import { useState } from "react"
+import LanguageSwitcher from "@/components/LanguageSwitcher"
+import type { Lang, Dictionary } from "@/lib/i18n"
 
 export function Navbar({
   siteTitle,
   logo,
   navigation,
+  lang,
+  dict,
 }: {
   siteTitle: string
   logo: string | null
   navigation: { label: string; url: string }[]
+  lang: Lang
+  dict: Dictionary["nav"]
 }) {
   const { data: session } = useSession()
   const [open, setOpen] = useState(false)
@@ -43,10 +49,10 @@ export function Navbar({
               ))
             : (
               <>
-                <Link href="/" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">Haberler</Link>
-                <Link href="/koy" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">Köy</Link>
-                <Link href="/galeri" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">Galeri</Link>
-                <Link href="/reklam" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">Reklam</Link>
+                <Link href="/" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">{dict.news}</Link>
+                <Link href="/koy" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">{dict.village}</Link>
+                <Link href="/galeri" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">{dict.gallery}</Link>
+                <Link href="/reklam" className="px-3 py-2 text-gray-700 hover:text-primary hover:bg-primary-light rounded-lg transition">{dict.advertise}</Link>
               </>
             )}
         </nav>
@@ -67,6 +73,7 @@ export function Navbar({
 
         {/* Kullanıcı */}
         <div className="hidden md:flex items-center gap-3">
+          <LanguageSwitcher lang={lang} />
           {session ? (
             <div className="relative">
               <button
@@ -91,14 +98,14 @@ export function Navbar({
                       onClick={() => setOpen(false)}
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                     >
-                      Editör Paneli
+                      {dict.editorPanel}
                     </Link>
                   )}
                   <button
                     onClick={() => { signOut(); setOpen(false) }}
                     className="block w-full text-left px-4 py-2 text-red-500 hover:bg-gray-50"
                   >
-                    Çıkış Yap
+                    {dict.logout}
                   </button>
                 </div>
               )}
@@ -108,7 +115,7 @@ export function Navbar({
               href="/login"
               className="text-sm bg-primary text-white px-4 py-1.5 rounded-lg hover:bg-primary-hover transition"
             >
-              Giriş Yap
+              {dict.login}
             </Link>
           )}
         </div>
@@ -130,21 +137,21 @@ export function Navbar({
               ))
             : (
               <>
-                <Link href="/" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">Haberler</Link>
-                <Link href="/koy" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">Köy</Link>
-                <Link href="/galeri" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">Galeri</Link>
-                <Link href="/reklam" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">Reklam</Link>
+                <Link href="/" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">{dict.news}</Link>
+                <Link href="/koy" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">{dict.village}</Link>
+                <Link href="/galeri" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">{dict.gallery}</Link>
+                <Link href="/reklam" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-primary-light rounded-lg text-sm font-medium">{dict.advertise}</Link>
               </>
             )}
           {session ? (
             <>
               {["editor", "admin"].includes((session.user as any).role) && (
-                <Link href="/editor" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg text-sm">Editör Paneli</Link>
+                <Link href="/editor" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-lg text-sm">{dict.editorPanel}</Link>
               )}
-              <button onClick={() => { signOut(); setMobileOpen(false) }} className="block w-full text-left px-3 py-2 text-red-500 hover:bg-red-50 rounded-lg text-sm">Çıkış Yap</button>
+              <button onClick={() => { signOut(); setMobileOpen(false) }} className="block w-full text-left px-3 py-2 text-red-500 hover:bg-red-50 rounded-lg text-sm">{dict.logout}</button>
             </>
           ) : (
-            <Link href="/login" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-primary hover:bg-primary-light rounded-lg text-sm font-medium">Giriş Yap</Link>
+            <Link href="/login" onClick={() => setMobileOpen(false)} className="block px-3 py-2 text-primary hover:bg-primary-light rounded-lg text-sm font-medium">{dict.login}</Link>
           )}
         </div>
       )}

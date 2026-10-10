@@ -1,0 +1,60 @@
+{
+  "code": "en",
+  "nav": {
+    "news": "News",
+    "village": "Village",
+    "gallery": "Gallery",
+    "allNews": "All News",
+    "advertise": "Advertisement",
+    "editorPanel": "Editor Panel",
+    "logout": "Log Out",
+    "login": "Log In",
+    "langLabel": "Language"
+  },
+  "footer": {
+    "pages": "Pages",
+    "categories": "Categories",
+    "contact": "Contact",
+    "agenda": "Agenda",
+    "sports": "Sports",
+    "economy": "Economy",
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "readMore": "Continue Reading",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "back": "Back",
+    "search": "Search",
+    "share": "Share",
+    "email": "Email",
+    "password": "Password",
+    "send": "Send"
+  },
+  "home": {
+    "title": "Latest news and gallery",
+    "latestNews": "Latest News",
+    "moreNews": "More News"
+  },
+  "about": {
+    "title": "About Us"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "village": {
+    "title": "Village"
+  },
+  "advertise": {
+    "title": "Advertisement"
+  },
+  "login": {
+    "title": "Log In",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "submit": "Log In"
+  },
+  "privacy": {
+    "title": "Privacy Policy"
+  }
+}

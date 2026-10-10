@@ -1,0 +1,60 @@
+{
+  "code": "tr",
+  "nav": {
+    "news": "Haberler",
+    "village": "Köy",
+    "gallery": "Galeri",
+    "allNews": "Tüm Haberler",
+    "advertise": "Reklam",
+    "editorPanel": "Editör Paneli",
+    "logout": "Çıkış Yap",
+    "login": "Giriş Yap",
+    "langLabel": "Dil"
+  },
+  "footer": {
+    "pages": "Sayfalar",
+    "categories": "Kategoriler",
+    "contact": "İletişim",
+    "agenda": "Gündem",
+    "sports": "Spor",
+    "economy": "Ekonomi",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "common": {
+    "readMore": "Devamını Oku",
+    "loading": "Yükleniyor…",
+    "noResults": "Sonuç bulunamadı",
+    "back": "Geri",
+    "search": "Ara",
+    "share": "Paylaş",
+    "email": "E-posta",
+    "password": "Şifre",
+    "send": "Gönder"
+  },
+  "home": {
+    "title": "Güncel haberler ve galeri",
+    "latestNews": "Son Haberler",
+    "moreNews": "Daha Fazla Haber"
+  },
+  "about": {
+    "title": "Hakkımızda"
+  },
+  "gallery": {
+    "title": "Galeri"
+  },
+  "village": {
+    "title": "Köy"
+  },
+  "advertise": {
+    "title": "Reklam"
+  },
+  "login": {
+    "title": "Giriş Yap",
+    "emailLabel": "E-posta",
+    "passwordLabel": "Şifre",
+    "submit": "Giriş Yap"
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası"
+  }
+}

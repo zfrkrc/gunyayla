@@ -1,0 +1,60 @@
+{
+  "code": "zh",
+  "nav": {
+    "news": "新闻",
+    "village": "村庄",
+    "gallery": "画廊",
+    "allNews": "所有新闻",
+    "advertise": "广告",
+    "editorPanel": "编辑面板",
+    "logout": "退出",
+    "login": "登录",
+    "langLabel": "语言"
+  },
+  "footer": {
+    "pages": "页面",
+    "categories": "类别",
+    "contact": "联系",
+    "agenda": "头条",
+    "sports": "体育",
+    "economy": "经济",
+    "rights": "保留所有权利。"
+  },
+  "common": {
+    "readMore": "继续阅读",
+    "loading": "加载中…",
+    "noResults": "没有找到结果",
+    "back": "返回",
+    "search": "搜索",
+    "share": "分享",
+    "email": "电子邮件",
+    "password": "密码",
+    "send": "发送"
+  },
+  "home": {
+    "title": "最新新闻和画廊",
+    "latestNews": "最新新闻",
+    "moreNews": "更多新闻"
+  },
+  "about": {
+    "title": "关于我们"
+  },
+  "gallery": {
+    "title": "画廊"
+  },
+  "village": {
+    "title": "村庄"
+  },
+  "advertise": {
+    "title": "广告"
+  },
+  "login": {
+    "title": "登录",
+    "emailLabel": "电子邮件",
+    "passwordLabel": "密码",
+    "submit": "登录"
+  },
+  "privacy": {
+    "title": "隐私政策"
+  }
+}
