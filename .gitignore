@@ -4,3 +4,8 @@ data/
 .env
 .env.*
 !.env.example
+
+# repowise auto-generated (her commit sonrası değişir)
+.claude/CLAUDE.md
+.repowise/
+.vscode/
