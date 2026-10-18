@@ -1,4 +1,6 @@
 FROM node:20-alpine
+# Güvenlik: alpine paket upgrade (Trivy fixable)
+RUN apk -U upgrade --no-cache
 WORKDIR /app
 COPY package.json ./
 RUN npm install
