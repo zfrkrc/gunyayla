@@ -58,6 +58,8 @@ ENV UPLOAD_SECRET=$UPLOAD_SECRET
 RUN chmod +x ./node_modules/.bin/next && npm run build
 
 FROM node:20-alpine AS runner
+# Güvenlik: alpine paket upgrade (Trivy fixable)
+RUN apk -U upgrade --no-cache
 WORKDIR /app
 ENV NODE_ENV=production
 RUN addgroup --system --gid 1001 nodejs && \
